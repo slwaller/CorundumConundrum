@@ -1,0 +1,61 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+h1{
+padding-top: 60px; font-family: "Arvo"; 
+color: #757575; 
+text-align: center; 
+font-weight: 300; 
+text-shadow: 1px 1px 0px black; 
+letter-spacing: 2px; 
+font-height: 2px;
+}
+
+body {
+  /* Margin bottom by footer height */
+margin-bottom: 60px;
+font-family: "Arvo"; font-weight: 200px; color:  #f5f4e9;
+background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(60, 24, 28, 0.9)), color-stop(100%, #0e0a2e));
+}
+body > .container {
+padding: 40px 15px 0;
+}
+.lead{
+  font-weight: 100px;
+}
+.text-muted{
+  font-size: 18px; 
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  font-size: 14px;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
