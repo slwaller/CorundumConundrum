@@ -11,19 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140813225719) do
+ActiveRecord::Schema.define(version: 20140814175655) do
+
+  create_table "mineral_checkouts", force: true do |t|
+    t.integer  "mineral_id"
+    t.integer  "scientist_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "minerals", force: true do |t|
+    t.string   "name"
+    t.integer  "moh"
+    t.string   "origin"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "scientists", force: true do |t|
+    t.string   "name"
+    t.string   "institution"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "smithsonians", force: true do |t|
+    t.string   "name"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

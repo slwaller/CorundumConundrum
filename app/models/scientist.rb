@@ -1,3 +1,4 @@
 class Scientist < ActiveRecord::Base
-  belongs_to :researchable, polymorphic: true
+  has_many :mineral_checkouts
+  has_many :minerals, through: :mineral_checkouts
 end
