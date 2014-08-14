@@ -16,11 +16,13 @@ ActiveRecord::Schema.define(version: 20140813225719) do
   create_table "minerals", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "smithsonian_id"
   end
 
   create_table "scientists", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "mineral_id"
   end
 
   create_table "smithsonians", force: true do |t|
