@@ -43,19 +43,38 @@ padding: 40px 15px 0;
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
-
-body > .container {
-  padding: 60px 15px 0;
-}
 .container .text-muted {
   margin: 20px 0;
 }
+/* Custom default button */
+.btn-default,
+.btn-default:hover
+.btn-default: focus{
+  color: #f5f4e9;
+  text-shadow: none; 
+  background-color: #f5f4e9;
+  border: 1px solid #fff;
+  position: center;
+  border-radius: 6px;
+}
+
+
 
 .footer > .container {
   padding-right: 15px;
   padding-left: 15px;
 }
-
+body > .container {
+  padding: 60px 15px 0;
+}
 code {
   font-size: 80%;
+}
+p{
+  font-size: 20px;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  padding-left:20px;
+  padding-right:20px;
 }
