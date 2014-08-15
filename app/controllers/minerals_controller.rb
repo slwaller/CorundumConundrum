@@ -67,11 +67,11 @@ class MineralsController < ApplicationController
   private
 
   def mineral_params
-    params.require(:mineral).permit(#GET THESE)
+    params.require(:mineral).permit(:name, :moh, :origin)
   end
 
   def scientist_params
-      params.require(:scientist).permit(#GET THESE)
+      params.require(:scientist).permit(:name, :institution)
   end
 
 end

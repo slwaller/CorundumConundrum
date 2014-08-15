@@ -50,11 +50,11 @@ class SmithsoniansController < ApplicationController
   private
 
   def smithsonian_params
-    params.require(:smithsonian).permit(:name)
+    params.require(:smithsonian).permit(:name, :description)
   end
 
   def scientist_params
-    params.require(:scientist).permit(:description)
+    params.require(:scientist).permit(:name, :institution)
   end
 
 end
