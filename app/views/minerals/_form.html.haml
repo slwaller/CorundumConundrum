@@ -1,4 +1,4 @@
-= form_for [@minerals] do |f|
+= form_for [@smithsonian, @minerals] do |f|
   - if @smithsonian.errors.any?
     #error_explanation
       %h2= "#{pluralize(@smithsonian.errors.count, "error")} prohibited this museum from being saved:"
