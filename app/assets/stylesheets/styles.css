@@ -18,7 +18,7 @@ body {
   /* Margin bottom by footer height */
 margin-bottom: 60px;
 font-family: "Arvo"; font-weight: 200px; color:  #f5f4e9;
-background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(60, 24, 28, 0.9)), color-stop(100%, #0e0a2e));
+background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(60, 24, 28, 0.8)), color-stop(100%, #0e0a2e)), url(/assets/gemstones1.png);
 }
 body > .container {
 padding: 40px 15px 0;
