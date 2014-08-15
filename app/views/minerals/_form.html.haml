@@ -18,3 +18,8 @@
     = f.label :origin
     = f.text_area :origin
 
+  - @scientists.each do |scientist|
+    %li
+      = check_box_tag 'mineral[scientist_ids][]', scientist_id, @mineral.scientists.include?(scientist)
+      = scientist.name
+      
