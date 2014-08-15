@@ -50,14 +50,17 @@ padding: 40px 15px 0;
 .btn-default,
 .btn-default:hover
 .btn-default: focus{
-  color: #f5f4e9;
-  text-shadow: none; 
-  background-color: #f5f4e9;
+  color: black;
+  text-shadow: none; /*do not inherit from 'body'*/
+  background-color: white;
   border: 1px solid #fff;
   position: center;
   border-radius: 6px;
 }
 
+input{
+  color: #757575;
+}
 
 
 .footer > .container {
@@ -77,4 +80,10 @@ p{
   padding-bottom: 30px;
   padding-left:20px;
   padding-right:20px;
+}
+a:link, a:visited {
+    color: white;
+}
+a:hover {
+    color: #757575;
 }
