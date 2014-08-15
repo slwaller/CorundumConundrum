@@ -33,20 +33,11 @@
         
       / /.nav-collapse
   / Begin page content
-  .container
-    .page-header
-      %h1 Sticky footer with fixed navbar
-    %p.lead
-      Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with
-      %code padding-top: 60px;
-      on the
-      = succeed "." do
-        %code body > .container
+  .content
     %p
-      Back to
-      %a{href: "../sticky-footer"} the default sticky footer
-      minus the navbar.
-
+      The Artifact Research Institute allows scientists to gain access to the artifacts stored at museums across the country for research purposes.  After research on an item is completed, the results are sent to the owner of the artifact, as well as the museum entrusted with its care and preservation.
+  
+   
   = yield
   .footer
     .container
