@@ -1,0 +1,18 @@
+= form_for [@smithsonian] do |f|
+  - if @smithsonian.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@smithsonian.errors.count, "error")} prohibited this museum from being saved:"
+      %ul
+        - @smithsonian.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :description
+    = f.text_field :description
+  .field
+
+  .actions
+    = f.submit 'Save'

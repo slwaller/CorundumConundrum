@@ -50,11 +50,11 @@ class SmithsoniansController < ApplicationController
   private
 
   def smithsonian_params
-    params.require(:smithsonian).permit(#MAKE THESE TOMORROW)
+    params.require(:smithsonian).permit(:name)
   end
 
   def scientist_params
-    params.require(:scientist).permit(#MAKE THESE TOMORROW)
+    params.require(:scientist).permit(:description)
   end
 
 end
