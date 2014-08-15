@@ -1,0 +1,16 @@
+= form_for @scientist do |f|
+  - if @scientist.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@scientist.errors.count, "error")} prohibited this scientist from being saved:"
+      %ul
+        - @scientist.errors.full_messages.each do |msg|
+          %li= msg
+
+  .form-group
+    = f.label :name
+    = f.text_field :name, class: "form-control", placeholder: "Enter Your Name"
+  .form-group
+    = f.label :institution
+    = f.text_field :institution, class: "form-control"
+  .form-group 
+    = f.submit 'Save'
