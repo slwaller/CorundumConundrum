@@ -4,10 +4,10 @@
     = mineral.name
     = mineral.institution
     = link_to 'Show', mineral
-    = link_to 'Edit', edit_mineral_path(mineral)
+    = link_to 'Edit', edit_mineral_path(@smithsonian, mineral)
     = link_to 'Destroy', mineral, method: :delete
 
 %br
 
-= link_to 'New mineral', new_mineral_path
+= link_to 'New mineral', new_mineral_path(@smithsonian, mineral)
 = link_to 'Back', root_path

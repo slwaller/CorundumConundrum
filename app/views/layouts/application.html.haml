@@ -32,9 +32,9 @@
           %li.active
             %a{href: "#{smithsonians_path}"} Museums
           %li
-            %a{href: "#{smithsonian_minerals_path}"} Minerals
+            %a{href: "#{smithsonian_minerals_path(:smithsonian_id)}"} Minerals
           %li
-            %a{href: "#{smithsonian_mineral_scientists_path}"} Scientists
+            %a{href: "#{smithsonian_mineral_scientists_path(:mineral_id, :smithsonian_id)}"} Scientists
         
       / /.nav-collapse
   / Begin page content

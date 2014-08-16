@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20140815215022) do
     t.string   "origin"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "smithsonian_id"
   end
 
   create_table "scientists", force: true do |t|
@@ -33,6 +34,7 @@ ActiveRecord::Schema.define(version: 20140815215022) do
     t.string   "institution"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "mineral_id"
   end
 
   create_table "smithsonians", force: true do |t|

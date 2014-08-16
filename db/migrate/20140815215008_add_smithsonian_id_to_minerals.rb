@@ -1,5 +1,5 @@
 class AddSmithsonianIdToMinerals < ActiveRecord::Migration
   def change
-    :minerals, :smithsonian_id, :integer
+    add_column :minerals, :smithsonian_id, :integer
   end
 end
