@@ -1,7 +1,7 @@
 class SmithsoniansController < ApplicationController
 
   def index
-    @smithsonian = Smithsonian.all
+    @smithsonians = Smithsonian.all
   end
 
   def show
@@ -14,8 +14,12 @@ class SmithsoniansController < ApplicationController
   end
 
   def create
-    @smithsonian = Smithsonian.create smithsonian_params
+    @smithsonian = Smithsonian.new smithsonian_params
+    if @smithsonian.save
     redirect_to smithsonians_path
+    else 
+      render :new
+    end
   end
 
   def edit
