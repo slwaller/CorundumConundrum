@@ -1,10 +1,10 @@
 %h1 Our Museums!
-- @smithsonian.each do |museum|
+- @smithsonians.each do |museum|
   = museum.name
   = museum.description
-  = link_to 'Show', smithsonian_path(@smithsonian)
-  = link_to 'Edit', edit_smithsonian_path(@smithsonian)
-  = link_to 'Destroy', smithsonian_path(@smithsonian), method: :delete
+  = link_to 'Show', smithsonian_path(smithsonian)
+  = link_to "Edit", edit_smithsonian_path(smithsonian)
+  = link_to "Delete", smithsonian_path(smithsonian), method: :delete
   %br
 
 %br
