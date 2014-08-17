@@ -41,3 +41,4 @@ gem 'spring',        group: :development
 gem 'html2haml'
 gem 'haml-rails'
 gem 'quiet_assets'
+gem 'carrierwave'
