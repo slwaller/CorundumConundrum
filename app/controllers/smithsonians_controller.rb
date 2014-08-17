@@ -6,7 +6,7 @@ class SmithsoniansController < ApplicationController
 
   def show
     @smithsonian = Smithsonian.find params[:id]
-    @scientist = @smithsonian.scientists.new
+    @mineral = @smithsonian.minerals.new
   end
 
   def new
@@ -38,16 +38,16 @@ class SmithsoniansController < ApplicationController
     redirect_to smithsonians_path
   end
 
-  def create_scientist
+  def add_mineral
     @smithsonian = Smithsonian.find params[:id]
-    @smithsonian.scientists.create scientist_params
+    @smithsonian.minerals.create mineral_params
     redirect_to smithsonian_path(@smithsonian)
   end
 
-  def delete_scientist
+  def delete_mineral
     @smithsonian = Smithsonian.find params[:id]
-    @scientist = scientist.find params[:scientist_id]
-    @scientist.delete
+    @mineral = mineral.find params[:mineral_id]
+    @mineral.delete
     redirect_to @smithsonian
   end
 
@@ -57,8 +57,8 @@ class SmithsoniansController < ApplicationController
     params.require(:smithsonian).permit(:name, :description)
   end
 
-  def scientist_params
-    params.require(:scientist).permit(:name, :institution)
+  def mineral_params
+    params.require(:mineral).permit(:name, :moh, :origin)
   end
 
 end
