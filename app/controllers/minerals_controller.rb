@@ -14,6 +14,7 @@ class MineralsController < ApplicationController
   def new
     @mineral = Mineral.new
     @smithsonian = Smithsonian.find params[:smithsonian_id]
+    @scientists = Scientist.all
   end
 
   def create
@@ -29,6 +30,7 @@ class MineralsController < ApplicationController
   def edit
     @mineral = mineral.find params[:id]
     @smithsonian = Smithsonian.find params[:smithsonian_id]
+    @scientists = Scientist.all
   end
 
   def update
@@ -67,7 +69,7 @@ class MineralsController < ApplicationController
   private
 
   def mineral_params
-    params.require(:mineral).permit(:name, :moh, :origin)
+    params.require(:mineral).permit(:name, :moh, :origin, scientist_ids: [])
   end
 
   def scientist_params
