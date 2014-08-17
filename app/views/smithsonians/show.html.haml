@@ -1,11 +1,15 @@
 %b Name:
 = @smithsonian.name
-
-%b Description:
-= @smithsonian.discription
-
-= link_to 'Edit', edit_smithsonian_path(smithsonian)
 %br
-= link_to 'Back', smithsonian_path  
+%b Description:
+= @smithsonian.description
+%br
+= link_to "Add Mineral to this Museum!",
+  new_smithsonian_mineral_path(@smithsonian, @mineral)
+%br
+%br
 
-= link_to 'New Museum', new_smithsonian_path
+= link_to 'Edit', edit_smithsonian_path(@smithsonian)
+%br
+= link_to 'Back', smithsonians_path  
+
