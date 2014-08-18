@@ -13,16 +13,18 @@
 %br
 %br
 %strong
-  Minerals
+  Our Minerals
 %ul
   - @smithsonian.minerals.each do |mineral|
     - if mineral.name
       %li
+        |
         = mineral.name
         |
         = mineral.moh
         |
         = mineral.origin
+        |
 %br
 = link_to 'Scientists/Reseachers for this Museum', scientists_path
 %br
