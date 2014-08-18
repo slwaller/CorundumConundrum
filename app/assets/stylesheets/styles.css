@@ -1,8 +1,8 @@
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
-  min-height: 100%;
+position: relative;
+min-height: 100%;
 }
 h1{
 padding-top: 60px; 
@@ -19,6 +19,7 @@ margin-left: 50px;
 
 body {
   /* Margin bottom by footer height */
+margin-left: 20px;
 margin-bottom: 60px;
 font-family: "Arvo"; 
 font-weight: 100px; 
@@ -67,6 +68,9 @@ padding: 40px 15px 0;
 input{
   color: black;
 }
+img{
+  border-radius: 10px;
+}
 
 
 .footer > .container {
@@ -99,3 +103,4 @@ h2{
   margin-top: 40px;
   margin-left: 50px;
 }
+
