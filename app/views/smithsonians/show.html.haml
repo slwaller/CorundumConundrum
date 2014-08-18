@@ -4,12 +4,8 @@
 %b Description:
 = @smithsonian.description
 %br
-= link_to 'Edit Museum', edit_smithsonian_path(@smithsonian)
+= link_to 'Edit Museum Information', edit_smithsonian_path(@smithsonian)
 %br
-%br
-%br
-= link_to "Add Mineral to this Museum!",
-  new_smithsonian_mineral_path(@smithsonian, @mineral)
 %br
 %br
 %strong
@@ -18,15 +14,18 @@
   - @smithsonian.minerals.each do |mineral|
     - if mineral.name
       %li
-        |
-        = mineral.name
+        = mineral.name.capitalize!
         |
         = mineral.moh
         |
-        = mineral.origin
-        |
+        = mineral.origin.capitalize
 %br
-= link_to 'Scientists/Reseachers for this Museum', scientists_path
+= link_to "Add a new mineral",
+  new_smithsonian_mineral_path(@smithsonian, @mineral)
 %br
-
+%br
+= link_to 'View Scientists Working With This Museum', scientists_path
+>>>>>>> 9c9e3c672d5e9357d45e6cbd9c4d8f050bbe3ebd
+%br
+%br
 = link_to 'Back', smithsonians_path

@@ -6,14 +6,6 @@
 %b Institution:
 = @scientist.institution
 %br
-%p
-  / %strong Minerals
-  / %ul
-  /   - @scientist.minerals.each do |mineral|
-  /     %li
-  /       = mineral.name
-  /       |
-  /       = mineral.moh
 %br
 = link_to 'Edit', edit_scientist_path(@scientist)
 %br
