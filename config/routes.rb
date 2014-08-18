@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+resources :scientists
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -12,9 +14,7 @@ resources :smithsonians do
   end
 end
 
-resources :scientists do
 
-end
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

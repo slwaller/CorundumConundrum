@@ -5,7 +5,6 @@
       %ul
         - @smithsonian.errors.full_messages.each do |msg|
           %li= msg
-
   .field
     = f.label :name
     = f.text_field :name
@@ -16,12 +15,15 @@
     = f.label :origin
     = f.text_field :origin
   .field
+    %br
+    Assign Researcher to this mineral!
+    %ul
+      - @scientists.each do |scientist|
+        %li
+        = check_box_tag 'mineral[scientist_ids][]', scientist.id, @mineral.scientists.include?(scientist)
+        = scientist.name 
+  .actions
+    = f.submit 'Save'
 
-%ul
-  - @scientists.each do |scientist|
-    %li
-      = check_box_tag 'mineral[scientist_ids][]', scientist.id, @mineral.scientists.include?(scientist)
-      = scientist.name 
-    .actions
-      = scientist.submit 'Save'
+
       
