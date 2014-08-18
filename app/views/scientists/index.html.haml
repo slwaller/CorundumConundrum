@@ -1,5 +1,7 @@
-<<<<<<< HEAD
-%h1 Our current Scientists/Researchers
+
+%h3 Community Scientists
+%br
+
 %ul
   - @scientists.each do |scientist|
     %li
@@ -11,16 +13,6 @@
       = link_to '| Edit ', edit_scientist_path(scientist)
       = link_to '| Dismiss |', scientist, method: :delete
       
-/ %h3 Community Scientists
-
-/ - @scientists.each do |scientist|
-/   = scientist.name
-/   |
-/   = link_to 'View', scientist
-/   |
-/   = link_to 'Edit', edit_scientist_path(scientist)
-/   |
-/   = link_to 'Remove', scientist, method: :delete
 
 %br
 %br
