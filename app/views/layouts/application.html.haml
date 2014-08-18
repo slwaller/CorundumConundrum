@@ -33,11 +33,12 @@
             = link_to 'Museums', smithsonians_path
           %li
             = link_to 'Researchers', scientists_path
+        .pull-right
+          = user_login_links
       .nav-collapse
   .content
-    
-  
-   
+  %p.notice= notice if notice
+  %p.alert= alert if alert   
   = yield
   .footer
     .container
