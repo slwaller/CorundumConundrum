@@ -12,9 +12,9 @@ resources :smithsonians do
   end
 end
 
-    resources :scientists do
+resources :scientists do
 
-    end
+end
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -2,7 +2,7 @@ class MineralsController < ApplicationController
 
   def index
     @minerals = Mineral.all
-    # @smithsonian = Smithsonian.find params[:smithsonian_id]
+    @scientists = Scientist.all
   end
 
   def show
