@@ -1,18 +1,18 @@
-%h1 Our current Scientists/Researchers
-%ul
-  - @scientists.each do |scientist|
-    %li
-      = scientist.name
-      |
-      = scientist.institution
-      |
-      = link_to '| Show ', scientist
-      = link_to '| Edit ', edit_scientist_path(scientist)
-      = link_to '| Destroy |', scientist, method: :delete
+%h3 Community Scientists
+
+- @scientists.each do |scientist|
+  = scientist.name
+  |
+  = link_to 'View', scientist
+  |
+  = link_to 'Edit', edit_scientist_path(scientist)
+  |
+  = link_to 'Remove', scientist, method: :delete
 
 %br
 %br
-
-= link_to 'New Researcher Sign Up!', new_scientist_path
+= link_to 'Want to join our community?', new_scientist_path
+%br
 %br
 = link_to 'Back', root_path
+
