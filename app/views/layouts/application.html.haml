@@ -30,11 +30,11 @@
       .collapse.navbar-collapse
         %ul.nav.navbar-nav
           %li.active
-            %a{href: "#{smithsonians_path}"} Museums
+            = link_to 'Museums', smithsonians_path
           %li
-            %a{href: "#{smithsonian_minerals_path(@smithsonian, mineral)}"} Minerals
-          %li
-            %a{href: "#{smithsonian_mineral_scientists_path(@smithsonian, @mineral, scientist)}"} Scientists
+          /   = link_to 'Minerals', smithsonian_minerals_path
+          / %li
+          /   = link_to 'Researchers', scientists_path
         
       / /.nav-collapse
   / Begin page content
