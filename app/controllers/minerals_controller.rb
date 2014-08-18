@@ -1,5 +1,5 @@
 class MineralsController < ApplicationController
-
+  before_action :authenticate_user!, only: [:show, :new, :edit, :update, :destroy]
   def index
     @minerals = Mineral.all
     @scientists = Scientist.all
