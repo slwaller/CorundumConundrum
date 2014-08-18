@@ -7,12 +7,13 @@ root 'welcome#index'
 
 
 resources :smithsonians do
-
-  resources :minerals do
-
-    resources :scientists
+    resources :minerals do
 
   end
+end
+
+resources :scientists do
+
 end
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
