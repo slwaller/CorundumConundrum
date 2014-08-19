@@ -6,3 +6,4 @@ class Mineral < ActiveRecord::Base
   has_many :mineral_checkouts
   has_many :scientists, through: :mineral_checkouts
 end
+ 
