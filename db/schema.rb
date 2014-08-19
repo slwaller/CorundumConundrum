@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140818192822) do
+ActiveRecord::Schema.define(version: 20140819001525) do
 
   create_table "mineral_checkouts", force: true do |t|
     t.integer  "mineral_id"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20140818192822) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "smithsonian_id"
+    t.string   "avatar"
   end
 
   create_table "scientists", force: true do |t|

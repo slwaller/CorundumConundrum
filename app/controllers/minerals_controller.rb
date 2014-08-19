@@ -65,7 +65,11 @@ class MineralsController < ApplicationController
     redirect_to smithsonian_mineral_path(@smithsonian, @mineral)
   end
     
-
+  def uploader
+    file = File.open('example.jpg')
+    uploader = MyUploader.new
+    uploader.store!(file)
+  end
   private
 
   def mineral_params
