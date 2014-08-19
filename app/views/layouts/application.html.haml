@@ -28,11 +28,11 @@
         %a.navbar-brand{href: "#"} The Mineral Research Institute
       .collapse.navbar-collapse
         %ul.nav.navbar-nav
-          %li{class: "#{is_link_active?('Home')}"}
+          %li{class: "#{is_link_active?('welcome')}"}
             = link_to 'Home', root_path
-          %li{class: "#{is_link_active?('Museums')}"}
+          %li{class: "#{is_link_active?('smithsonians')}"}
             = link_to 'Museums', smithsonians_path
-          %li{class: "#{is_link_active?('Researchers')}"}
+          %li{class: "#{is_link_active?('scientists')}"}
             = link_to 'Researchers', scientists_path
         .pull-right
           = user_login_links
